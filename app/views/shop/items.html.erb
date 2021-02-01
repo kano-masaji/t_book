@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<HTML>
+  <%= stylesheet_link_tag "/test", :media => "all" %>
+  <HEAD>
+    <meta charset ="uft-8">
+    <TITLE>メニュー画面</TITLE>
+  </HEAD>
+  <BODY>
+      <div class = "top">
+        <h1>商品一覧</h1>
+      </div>
+      <div class="items">
+      
+        <div class="item">
+          <div class ="image">
+            <%= image_tag 'naruto_1.png', :size=>'200x300'%><br>
+          </div>
+          <div class ="title">
+            <h2>
+              <%= @titles[1]['name'] %><br>
+            </h2>
+          </div>
+            <p class ="shop_menu"><%= link_to "取り扱い店舗一覧", shop_1_path %></p><br>
+        </div>
+        
+        <div class="item">
+          <div class ="image">
+            <%= image_tag'hootage.png', :size=>'200x300'%><br>
+          </div>
+          <div class ="title">
+            <h2>
+              <%= @titles[0]['name'] %><br>
+            </h2>
+          </div>
+            <p class ="shop_menu"><%= link_to "取り扱い店舗一覧", shop_2_path %></p><br>
+        </div>
+        
+      </div>
+  </BODY>
+</HTML>
+
